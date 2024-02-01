@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("image/images.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.nav{
+    width: 50%;
+    height: 50px;
+    color: white;
+    /* display: flex; */
+    justify-content: space-around;
+    
+
+}
+.logo{
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: aliceblue;
+    
+    
+}
+.menu a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 3px 5px;
+    font-size: 20px;
+    position: relative;
+    align-items: center;
+   
+    
+}
+.menu li{
+    float: left;
+    color: aliceblue;
+    list-style: none;
+    list-style-type: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+.menu a::before{
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: all .5s linear;
+}
+.menu a:hover::before{
+    width: 95%;
+}
+.reg {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 18px;
+     background: indianred;
+     border-radius: 7px;
+     transition: 0.4s;
+     margin-left: 350px;
+    
+     
+}
+.reg a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.action{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.action span{
+    letter-spacing: 5px;
+    color: aliceblue;
+}
+.action h1{
+    font-size: 3.5em;
+    color: aliceblue;
+}
+.action .btn{
+   margin-top:  20px;
+   display: inline-block;
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 8px 15px;
+    letter-spacing: 5px;
+    transition: 0.4s;
+    
+}
+.action .btn:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+footer{
+    width: 100%;
+    position: fixed;
+	bottom: 0;
+    margin-top: 9rem;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    background-color: black;
+    align-items: center;
+}
